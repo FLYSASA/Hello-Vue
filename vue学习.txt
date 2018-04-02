@@ -1,0 +1,29 @@
+##vue 学习之旅
+
+####vue安装:
+不支持ie8及以下版本.
+方式:  
+#####1.直接用<scirpt>引入,vue会被注册为一个全局变量  
+- 我们推荐链接到一个你可以手动更新的指定版本号:  
+https://vuejs.org/js/vue.js
+
+- CDN:
+```
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+
+```
+#####2.NPM
+在用 Vue 构建大型应用时推荐使用 NPM 安装。  
+NPM 能很好地和诸如 webpack 或 Browserify 模块打包器配合使用。  
+同时 Vue 也提供配套工具来开发单文件组件。
+
+
+#####3.简单使用
+例子:http://js.jirengu.com/lizuyujije/1/edit?html,js,output
+
+
+
+创建一个vue实例:
+var vm = new Vue({})
+
+你只需要明白所有的 Vue 组件都是 Vue 实例，并且接受相同的选项对象 (一些根实例特有的选项除外)。
