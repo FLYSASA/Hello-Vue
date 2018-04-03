@@ -179,3 +179,14 @@ Vue.js为最常用的两个指令`v-bind`和`v-on`提供了缩写形式. **v-bin
 结合以上知识我们做个小Demo.
 
 Demo:http://js.jirengu.com/jawijamepi/1/edit?html,js,output
+
+> 总结:
+- `v-for="item in items"`,将items与data联系起来,定义为一个items: [](也可以自定义初始值).
+- 将items与input输入框联系起来,将input定义一个`v-model`属性= value,这个value可以是字符串也可以是对象. 然后定义个add按钮 @click="createPeople",在方法methds里定义好这个createPeople函数.
+函数内容即 items.push(value.xxx)即可,另外还需要在展示item里植入文本{{value.xxx}}. **在push完input输入的新对象后,一定要记得将新对象重置,否则将会把新对象与items关联**
+- `v-bind:class="'xxx'"`  v-bind:后面一定不能加空格,xxx有两层引号,一层是字符串的,一层是class的.
+- data中的数据在app范围内的地方都可以使用,要使用data的数据,必须使用`this.`的形式
+
+- ``v:bind``一般加在父容器上面
+
+- ``v-for="(person,index)`` in people"  index必须写在person右边并且传入方法里面作为参数,否则无效
