@@ -10,9 +10,9 @@
     <div id="app">
         {{ message }}
     </div>
+    <button v-on:click="greet">Greet</button>
+    <button @click="greet">Greet</button>
 </body>
 <script src="./dist/bundle.js"></script>
-</html>
 
-<button v-on:click="greet">Greet</button>
-<button @click="greet">Greet</button>
+</html>
